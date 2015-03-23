@@ -1,0 +1,1 @@
+E:\Programming\Projects\C#\Games\TetrisConsoleGame\TetrisConsoleGame\bin\Debug\TetrisConsoleGame.exe.config
