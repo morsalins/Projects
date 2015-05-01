@@ -11,19 +11,21 @@ namespace TetrisConsoleGame
         static void Main(string[] args)
         {
             MenuList menu = new MenuList();
-  
-            adjustConsole();
             
+            adjustConsole();
             menu.showMenu();
             menu.selectMenu();
-            Console.ReadKey();
+            //Console.ReadKey();
             return;
         }
 
         private static void adjustConsole()
         {
             Console.Title = "Tetris Game";
+            ChangeConsoleColors.to_Console_Default_BackgroundColor();
+            ChangeConsoleColors.to_Console_Default_ForegroundColor();
             Console.SetWindowSize(80, 45);
+            Console.CursorVisible = false;
         }
     }
 }

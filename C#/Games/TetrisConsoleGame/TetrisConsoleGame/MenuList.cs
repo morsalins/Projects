@@ -13,6 +13,8 @@ namespace TetrisConsoleGame
         private ConsoleKeyInfo input;
         private bool gameRunning = true;
 
+        private string[] menuNames = { "1.Play", "2.Highscores", "3.Help", "4.Exit"};
+
         public MenuList()
         {
             // Deault Constructor.
@@ -21,23 +23,21 @@ namespace TetrisConsoleGame
         public void showMenu()
         {
             Console.Clear();
-            Console.SetCursorPosition(30, 0);
-            Console.WriteLine("TETRIS GAME");
-            Console.SetCursorPosition(30, 2);
-            Console.WriteLine("1.Play");
-            Console.SetCursorPosition(30, 3);
-            Console.WriteLine("2.Highscores");
-            Console.SetCursorPosition(30, 4);
-            Console.WriteLine("3.Help");
-            Console.SetCursorPosition(30, 5);
-            Console.WriteLine("4.Exit");
+            Console.SetCursorPosition(30, 0); Console.WriteLine("TETRIS GAME");
+            Console.SetCursorPosition(30, 2); Console.WriteLine(menuNames[0]);
+            Console.SetCursorPosition(30, 3); Console.WriteLine(menuNames[1]);
+            Console.SetCursorPosition(30, 4); Console.WriteLine(menuNames[2]);
+            Console.SetCursorPosition(30, 5); Console.WriteLine(menuNames[3]);
+            
+            Console.SetCursorPosition(20, 8); Console.WriteLine("Press Arrow Keys: Navigate Options.");
+            Console.SetCursorPosition(20, 9); Console.WriteLine("Press Enter: Select Menu.");
+
+            showNavigator(27, 2);
+            ChangeConsoleColors.change_LineColor(30, 2, menuNames[0], ChangeConsoleColors.navigatorForeground);
         }
 
         public void selectMenu()
         {
-            Console.CursorVisible = false;
-            showNavigator(27, 2);
-
             do
             {
                 input = Console.ReadKey();
@@ -55,7 +55,7 @@ namespace TetrisConsoleGame
                     if (Console.CursorTop == 2)
                     {
                         play = new Play();
-                        play.playGame();
+                        play.startGame();
                         showMenu();
                         showNavigator(27, 2);
                     }
@@ -102,7 +102,8 @@ namespace TetrisConsoleGame
         private void moveNavigator(string direction)
         {
             clearNavigator(27, Console.CursorTop);
-            
+            ChangeConsoleColors.change_LineColor(30, Console.CursorTop, menuNames[Console.CursorTop - 2], ChangeConsoleColors.defaultForeground);
+
             if (direction == "Down")
             {
                 Console.CursorTop++;
@@ -113,7 +114,8 @@ namespace TetrisConsoleGame
                 Console.CursorTop--;
                 if (Console.CursorTop < 2) Console.CursorTop = 5;
             }
-            
+
+            ChangeConsoleColors.change_LineColor(30, Console.CursorTop, menuNames[Console.CursorTop - 2], ChangeConsoleColors.navigatorForeground);
             showNavigator(27, Console.CursorTop);
         }
 
@@ -125,9 +127,11 @@ namespace TetrisConsoleGame
 
         private void showNavigator(int left, int top)
         {
+            ChangeConsoleColors.to_Navigator_ForegroundColor();
             Console.SetCursorPosition(left, top);
             Console.Write("->");
             Console.SetCursorPosition(left-1, top);
+            ChangeConsoleColors.to_Console_Default_ForegroundColor();
         }
 
         private void invalidInputMessage(int left, int top)

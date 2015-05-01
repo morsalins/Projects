@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TetrisConsoleGame.Bucket">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAKABBAmAAAAgAABAAAABAAAAAAAAAAAAAIAAAAgA=</HashCode>
+      <FileName>Bucket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetrisConsoleGame.ChangeConsoleColors">
+    <Position X="19.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AIAYAAIAAAAAAAAAAAQCAAQAgAAAEAAAAAAAQAAIAAA=</HashCode>
+      <FileName>ChangeConsoleColors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetrisConsoleGame.LineShape">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LineShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetrisConsoleGame.LShape">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetrisConsoleGame.MenuList">
+    <Position X="13.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAIAAAAAIAAQAAAAAAAAAAASAABAQIAAAQAACAAA=</HashCode>
+      <FileName>MenuList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetrisConsoleGame.Play">
+    <Position X="15.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AEgAAACgQAEAgEAAICAIAEAAIAAAAAAAAEQAAAAQIIA=</HashCode>
+      <FileName>Play.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetrisConsoleGame.Program">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetrisConsoleGame.SShape">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetrisConsoleGame.TetrisShapes" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAQAAABAABQAAABgAAECIAAAAIAUACEQQgBA=</HashCode>
+      <FileName>TetrisShapes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetrisConsoleGame.ZShape">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ZShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetrisConsoleGame.JShape">
+    <Position X="9.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetrisConsoleGame.BoxShape">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BoxShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetrisConsoleGame.TShape">
+    <Position X="11" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

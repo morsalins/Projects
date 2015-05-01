@@ -1,6 +1,6 @@
 E:\Programming\Projects\C#\Games\TetrisConsoleGame\TetrisConsoleGame\bin\Debug\TetrisConsoleGame.exe.config
+E:\Programming\Projects\C#\Games\TetrisConsoleGame\TetrisConsoleGame\obj\Debug\TetrisConsoleGame.exe
+E:\Programming\Projects\C#\Games\TetrisConsoleGame\TetrisConsoleGame\obj\Debug\TetrisConsoleGame.pdb
 E:\Programming\Projects\C#\Games\TetrisConsoleGame\TetrisConsoleGame\bin\Debug\TetrisConsoleGame.exe
 E:\Programming\Projects\C#\Games\TetrisConsoleGame\TetrisConsoleGame\bin\Debug\TetrisConsoleGame.pdb
 E:\Programming\Projects\C#\Games\TetrisConsoleGame\TetrisConsoleGame\obj\Debug\TetrisConsoleGame.csprojResolveAssemblyReference.cache
-E:\Programming\Projects\C#\Games\TetrisConsoleGame\TetrisConsoleGame\obj\Debug\TetrisConsoleGame.exe
-E:\Programming\Projects\C#\Games\TetrisConsoleGame\TetrisConsoleGame\obj\Debug\TetrisConsoleGame.pdb

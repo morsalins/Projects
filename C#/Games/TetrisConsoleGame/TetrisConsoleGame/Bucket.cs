@@ -6,59 +6,98 @@ using System.Threading.Tasks;
 
 namespace TetrisConsoleGame
 {
-    class Bucket
+    public static class Bucket
     {
-        public int leftEnd;
-        public int rightEnd;
-        public int topEnd;
-        public int bottomEnd;
+        public static int leftEnd = 10;
+        public static int rightEnd = 50;
+        public static int topEnd = 5;
+        public static int bottomEnd = 40;
 
-        public Bucket()
-        {
-            // Default Constructor
-        }
+        private const char horizontalWall = '-';
+        private const char verticalWall = '|';
 
-        public Bucket(int l, int r, int t, int b)
-        {
-            this.leftEnd = l;
-            this.rightEnd = r;
-            this.topEnd = t;
-            this.bottomEnd = b;
-        }
+        public static bool[,] bucketGrid = new bool[bottomEnd - topEnd + 1, rightEnd - leftEnd + 1];
+        public static int baseRow = topEnd + 1;
+        public static int baseCol = leftEnd;
 
-        public void buildBucket()
+        public static void buildBucket()
         {
             Console.Clear();
 
-            Console.SetCursorPosition(this.leftEnd, this.topEnd);
-            for (int i = 1; i <= this.rightEnd - this.leftEnd + 1; i++)
+            Console.SetCursorPosition(leftEnd, topEnd);
+            for (int i = 1; i <= rightEnd - leftEnd + 1; i++)
             {
-                Console.Write('#');
+                Console.Write(horizontalWall);
             }
             // Build the top Boundary
 
-            Console.SetCursorPosition(this.leftEnd, this.bottomEnd);
-            for (int i = 1; i <= this.rightEnd - this.leftEnd + 1; i++)
+            Console.SetCursorPosition(leftEnd, bottomEnd);
+            for (int i = 1; i <= rightEnd - leftEnd + 1; i++)
             {
-                Console.Write('#');
+                Console.Write(horizontalWall);
             }
             // Build the Botom Boundary
 
-            Console.SetCursorPosition(this.leftEnd, this.topEnd);
-            for (int i = 1; i <= (this.bottomEnd-1) - (this.topEnd+1) + 1; i++)
+            Console.SetCursorPosition(leftEnd, topEnd);
+            for (int i = 1; i < bottomEnd - topEnd; i++)
             {
-                Console.SetCursorPosition(this.leftEnd, this.topEnd + i);
-                Console.Write('#');
+                Console.SetCursorPosition(leftEnd-1, topEnd + i);
+                Console.Write(verticalWall);
             }
             // Build the left boundary
 
-            Console.SetCursorPosition(this.rightEnd, this.topEnd);
-            for (int i = 1; i <= (this.bottomEnd - 1) - (this.topEnd + 1) + 1; i++)
+            Console.SetCursorPosition(rightEnd, topEnd);
+            for (int i = 1; i < bottomEnd - topEnd; i++)
             {
-                Console.SetCursorPosition(this.rightEnd, this.topEnd + i);
-                Console.Write('#');
+                Console.SetCursorPosition(rightEnd+1, topEnd + i);
+                Console.Write(verticalWall);
             }
             // Build the right boundary
-        }     
+
+            colorBucketArea();
+            resetBucketGrid();
+        }
+
+        private static void colorBucketArea()
+        {
+            ChangeConsoleColors.to_Bucket_BackgroundColor();
+
+            for (int i = 1; i < bottomEnd - topEnd; i++)
+            {
+                Console.SetCursorPosition(leftEnd, topEnd+i);
+
+                for (int j = 1; j <= rightEnd - leftEnd + 1; j++)
+                {
+                    Console.Write(" ");
+                }
+            }
+
+            ChangeConsoleColors.to_Console_Default_BackgroundColor();
+        }
+
+        private static void resetBucketGrid()
+        {
+            for (int i = 0; i < bucketGrid.GetLength(0); i++)
+            {
+                for (int j = 0; j < bucketGrid.GetLength(1); j++)
+                {
+                    bucketGrid[i, j] = false;
+                }
+            }
+        }
+
+        public static void updateGrid(char[][] arr, int left, int top, char ch)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                for (int j = 0; j < arr[i].Length; j++)
+                {
+                    if (arr[i][j] == ch)
+                    {
+                        Bucket.bucketGrid[(top + i) - baseRow, (left + j) - baseCol] = true;
+                    }
+                }
+            }
+        }
     }
 }
