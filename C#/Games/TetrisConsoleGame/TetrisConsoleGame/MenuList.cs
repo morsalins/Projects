@@ -7,19 +7,27 @@ using System.Threading;
 
 namespace TetrisConsoleGame
 {
+    /// <summary>
+    /// A class to control and manage every main menu of the program.
+    /// </summary>
     class MenuList
     {
         private Play play;
         private ConsoleKeyInfo input;
         private bool gameRunning = true;
 
-        private string[] menuNames = { "1.Play", "2.Highscores", "3.Help", "4.Exit"};
+        private string[] menuNames = { "1.Play", "2.Credits", "3.Help", "4.Exit"};
 
+        /// <summary>
+        /// // Deault Constructor.
+        /// </summary>
         public MenuList()
         {
-            // Deault Constructor.
         }
         
+        /// <summary>
+        /// showMenu() a function to print/display the main menu in Console screen. 
+        /// </summary>
         public void showMenu()
         {
             Console.Clear();
@@ -36,6 +44,10 @@ namespace TetrisConsoleGame
             ChangeConsoleColors.change_LineColor(30, 2, menuNames[0], ChangeConsoleColors.navigatorForeground);
         }
 
+        /// <summary>
+        /// selectMenu() will select the menu and do the specified job of that menu
+        /// by calling the specified function according to the user's input.
+        /// </summary>
         public void selectMenu()
         {
             do
@@ -56,16 +68,17 @@ namespace TetrisConsoleGame
                     {
                         play = new Play();
                         play.startGame();
-                        showMenu();
-                        showNavigator(27, 2);
+                        showMenu();                  
                     }
                     else if (Console.CursorTop == 3)
                     {
-
+                        showCredits();
+                        showMenu();
                     }
                     else if (Console.CursorTop == 4)
                     {
-
+                        showHelp();
+                        showMenu();
                     }
                     else if (Console.CursorTop == 5)
                     {
@@ -77,12 +90,16 @@ namespace TetrisConsoleGame
                     invalidInputMessage(30, 10);
                     Thread.Sleep(1000);
                     showMenu();
-                    showNavigator(27, 2);
                 }
             
             } while (gameRunning);
         }
 
+        /// <summary>
+        /// gameExitQuery() a function which ask user if he/she really wants to quit after selecting the Exit menu.
+        /// if user press 'y' this function will make 'gameRunning' variable to 'false'. Which will end the execution
+        /// of this program. Otherwise it will do nothing and return to caller function if any other key pressed.
+        /// </summary>
         private void gameExitQuery()
         {
             Console.Clear();
@@ -95,10 +112,15 @@ namespace TetrisConsoleGame
             else
             {
                 showMenu();
-                showNavigator(27, 2);
             }
         }
 
+        /// <summary>
+        /// moveNavigator(string) a function to manage the movement of the navigator('->') through menu.
+        /// 
+        /// parameters:
+        ///     direction: Indicating the direction (Up or Down) where the navigator will move.
+        /// </summary>
         private void moveNavigator(string direction)
         {
             clearNavigator(27, Console.CursorTop);
@@ -119,12 +141,27 @@ namespace TetrisConsoleGame
             showNavigator(27, Console.CursorTop);
         }
 
+        /// <summary>
+        /// clearNavigator(int, int) a function to clear/remove the navigator from current position.
+        /// 
+        /// parameters:
+        ///     left: indicating the left posotion of the console window.
+        ///     top: indicating the top posotion of the console window.
+        /// </summary>
         private void clearNavigator(int left, int top)
         {
             Console.SetCursorPosition(left, top);
             Console.Write("  ");
         }
 
+
+        /// <summary>
+        /// showNavigator(int, int) a function to show/display the navigator in console screen.
+        /// 
+        /// parameters:
+        ///     left: indicating the left posotion of the console window.
+        ///     top: indicating the top posotion of the console window.
+        /// </summary>
         private void showNavigator(int left, int top)
         {
             ChangeConsoleColors.to_Navigator_ForegroundColor();
@@ -134,11 +171,76 @@ namespace TetrisConsoleGame
             ChangeConsoleColors.to_Console_Default_ForegroundColor();
         }
 
+        private void showCredits()
+        {
+            Console.Clear();
+
+            ChangeConsoleColors.to_info_BackgroundColor();
+            ChangeConsoleColors.to_info_ForegroundColor();
+
+            Console.SetCursorPosition(10, 5);
+            Console.Write("Mohaimin Morsalin");
+
+            Console.SetCursorPosition(10, Console.CursorTop + 1);
+            Console.Write("United International University (CSE 121)");
+
+            Console.SetCursorPosition(10, Console.CursorTop + 1);
+            Console.Write("Dhaka, Bangladesh.");
+
+            Console.SetCursorPosition(10, Console.CursorTop + 1);
+            Console.Write("Email: mim120291@gmail.com");
+
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 12, Console.CursorTop + 2);
+            Console.Write("press any key to get back ......");
+            Console.ReadKey();
+
+            ChangeConsoleColors.to_Console_Default_BackgroundColor();
+            ChangeConsoleColors.to_Console_Default_ForegroundColor();
+        }
+
+        private void showHelp()
+        {
+            Console.Clear();
+
+            ChangeConsoleColors.to_info_ForegroundColor();
+            ChangeConsoleColors.to_info_BackgroundColor();
+
+            Console.SetCursorPosition(0, 5);
+            Console.Write("\tControls:\n");
+            Console.Write("\tUp: Rotate\n");
+            Console.Write("\tLeft: Move Left\n");
+            Console.Write("\tRight: Move Right\n");
+            Console.Write("\tDown: Move Down by three lines\n\n");
+
+            Console.Write("\tRules:\n");
+            Console.Write("\tJust try to fill up every row.\n"
+                        + "\tPoints are earned one by one by filling up every row.\n"
+                        + "\tLevel increased by earning every 5 Points.\n"
+                        + "\tThe falling Down speed of every shape will be increased\n"
+                        + "\twith the increment of Level\n");
+
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 12, Console.CursorTop + 2);
+            Console.Write("press any key to get back ......");
+            Console.ReadKey();
+
+            ChangeConsoleColors.to_Console_Default_BackgroundColor();
+            ChangeConsoleColors.to_Console_Default_ForegroundColor();
+        }
+
+        /// <summary>
+        /// invalidInputMessage(int, int) a function to show/display the warning after invalid input in console screen.
+        /// 
+        /// parameters:
+        ///     left: indicating the left posotion of the console window.
+        ///     top: indicating the top posotion of the console window.
+        /// </summary>
         private void invalidInputMessage(int left, int top)
         {
             Console.Clear();
+            ChangeConsoleColors.to_error_ForegroundColor();
             Console.SetCursorPosition(left, top);
             Console.WriteLine("{0} is not a valid input!!!", input.KeyChar);
+            ChangeConsoleColors.to_Console_Default_ForegroundColor();
         }
     }
 }

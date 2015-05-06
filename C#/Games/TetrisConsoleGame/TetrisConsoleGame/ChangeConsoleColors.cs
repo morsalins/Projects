@@ -12,7 +12,10 @@ namespace TetrisConsoleGame
         public static ConsoleColor defaultForeground = ConsoleColor.White;
         public static ConsoleColor navigatorForeground = ConsoleColor.Cyan;
         public static ConsoleColor bucketBackground = ConsoleColor.White;
-        public static ConsoleColor bucketForeground = ConsoleColor.Black;
+        public static ConsoleColor bucketForeground = ConsoleColor.DarkGreen;
+        public static ConsoleColor infoForeground = ConsoleColor.Green;
+        public static ConsoleColor infoBackground = ConsoleColor.Black;
+        public static ConsoleColor errorForeground = ConsoleColor.Red;
 
         public static void to_Console_Default_BackgroundColor()
         {
@@ -37,6 +40,21 @@ namespace TetrisConsoleGame
         public static void to_Bucket_ForegroundColor()
         {
             Console.ForegroundColor = bucketForeground;
+        }
+
+        public static void to_info_BackgroundColor()
+        {
+            Console.BackgroundColor = infoBackground;
+        }
+
+        public static void to_info_ForegroundColor()
+        {
+            Console.ForegroundColor = infoForeground;
+        }
+
+        public static void to_error_ForegroundColor()
+        {
+            Console.ForegroundColor = errorForeground;
         }
 
         public static void change_LineColor(int left, int top, string line, ConsoleColor lineColor)

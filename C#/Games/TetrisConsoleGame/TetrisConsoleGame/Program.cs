@@ -15,10 +15,14 @@ namespace TetrisConsoleGame
             adjustConsole();
             menu.showMenu();
             menu.selectMenu();
-            //Console.ReadKey();
+            
             return;
         }
 
+        /// <summary>
+        /// adjustConsole() function will adjust and manage the console screen
+        /// such as foreground background color, window size, cursor visibility 
+        /// </summary>
         private static void adjustConsole()
         {
             Console.Title = "Tetris Game";

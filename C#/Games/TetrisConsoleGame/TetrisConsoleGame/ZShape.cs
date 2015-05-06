@@ -33,14 +33,14 @@ namespace TetrisConsoleGame
             if (nextRotation == 1)
             {
                 return top - 1 > Bucket.topEnd 
-                    && !Bucket.bucketGrid[(top - 1) - Bucket.baseRow, centerX - Bucket.baseCol]
-                    && !Bucket.bucketGrid[bottom - Bucket.baseRow, left - Bucket.baseCol];
+                    && !Bucket.Grid[(top - 1) - Bucket.baseRow, centerX - Bucket.baseCol]
+                    && !Bucket.Grid[bottom - Bucket.baseRow, left - Bucket.baseCol];
             }
             else if (nextRotation == 0)
             {
                 return right + 1 <= Bucket.rightEnd
-                    && !Bucket.bucketGrid[bottom - Bucket.baseRow, centerX - Bucket.baseCol]
-                    && !Bucket.bucketGrid[bottom - Bucket.baseRow, (right + 1) - Bucket.baseCol];
+                    && !Bucket.Grid[bottom - Bucket.baseRow, centerX - Bucket.baseCol]
+                    && !Bucket.Grid[bottom - Bucket.baseRow, (right + 1) - Bucket.baseCol];
             }
             return false;
         }
@@ -50,15 +50,15 @@ namespace TetrisConsoleGame
             if (currentRotation == 0)
             {
                 return left - 1 >= Bucket.leftEnd
-                    && !Bucket.bucketGrid[top - Bucket.baseRow, (left-1) - Bucket.baseCol]
-                    && !Bucket.bucketGrid[bottom - Bucket.baseRow, left - Bucket.baseCol];
+                    && !Bucket.Grid[top - Bucket.baseRow, (left-1) - Bucket.baseCol]
+                    && !Bucket.Grid[bottom - Bucket.baseRow, left - Bucket.baseCol];
             }
             else if (currentRotation == 1)
             {
                 return left - 1 >= Bucket.leftEnd
-                    && !Bucket.bucketGrid[top - Bucket.baseRow, left - Bucket.baseCol]
-                    && !Bucket.bucketGrid[centerY - Bucket.baseRow, (left - 1) - Bucket.baseCol]
-                    && !Bucket.bucketGrid[bottom - Bucket.baseRow, (left - 1) - Bucket.baseCol];
+                    && !Bucket.Grid[top - Bucket.baseRow, left - Bucket.baseCol]
+                    && !Bucket.Grid[centerY - Bucket.baseRow, (left - 1) - Bucket.baseCol]
+                    && !Bucket.Grid[bottom - Bucket.baseRow, (left - 1) - Bucket.baseCol];
             }
             return false;
         }
@@ -68,15 +68,15 @@ namespace TetrisConsoleGame
             if (currentRotation == 0)
             {
                 return right + 1 <= Bucket.rightEnd
-                    && !Bucket.bucketGrid[top - Bucket.baseRow, right - Bucket.baseCol]
-                    && !Bucket.bucketGrid[bottom - Bucket.baseRow, (right +1) - Bucket.baseCol];
+                    && !Bucket.Grid[top - Bucket.baseRow, right - Bucket.baseCol]
+                    && !Bucket.Grid[bottom - Bucket.baseRow, (right +1) - Bucket.baseCol];
             }
             else if (currentRotation == 1)
             {
                 return right + 1 <= Bucket.rightEnd
-                    && !Bucket.bucketGrid[top - Bucket.baseRow, (right + 1) - Bucket.baseCol]
-                    && !Bucket.bucketGrid[centerY - Bucket.baseRow, (right + 1) - Bucket.baseCol]
-                    && !Bucket.bucketGrid[bottom - Bucket.baseRow, right - Bucket.baseCol];
+                    && !Bucket.Grid[top - Bucket.baseRow, (right + 1) - Bucket.baseCol]
+                    && !Bucket.Grid[centerY - Bucket.baseRow, (right + 1) - Bucket.baseCol]
+                    && !Bucket.Grid[bottom - Bucket.baseRow, right - Bucket.baseCol];
             }
             return false;
         }
@@ -91,9 +91,9 @@ namespace TetrisConsoleGame
                 while (x <= steps && Continue)
                 {
                     if (bottom + x < Bucket.bottomEnd
-                        && !Bucket.bucketGrid[(top + x) - Bucket.baseRow, left - Bucket.baseCol]
-                        && !Bucket.bucketGrid[(bottom + x) - Bucket.baseRow, centerX - Bucket.baseCol]
-                        && !Bucket.bucketGrid[(bottom + x) - Bucket.baseRow, right - Bucket.baseCol])
+                        && !Bucket.Grid[(top + x) - Bucket.baseRow, left - Bucket.baseCol]
+                        && !Bucket.Grid[(bottom + x) - Bucket.baseRow, centerX - Bucket.baseCol]
+                        && !Bucket.Grid[(bottom + x) - Bucket.baseRow, right - Bucket.baseCol])
                     {
                         x++;
                     }
@@ -105,8 +105,8 @@ namespace TetrisConsoleGame
                 while (x <= steps && Continue)
                 {
                     if (bottom + x < Bucket.bottomEnd
-                        && !Bucket.bucketGrid[(centerY + x) - Bucket.baseRow, right - Bucket.baseCol]
-                        && !Bucket.bucketGrid[(bottom + x) - Bucket.baseRow, left - Bucket.baseCol])
+                        && !Bucket.Grid[(centerY + x) - Bucket.baseRow, right - Bucket.baseCol]
+                        && !Bucket.Grid[(bottom + x) - Bucket.baseRow, left - Bucket.baseCol])
                     {
                         x++;
                     }
