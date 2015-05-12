@@ -45,27 +45,39 @@ namespace TetrisConsoleGame
         private int fallingTimeInterval;
 
         /// <summary>
-        /// These four sidebar variable will manage the boundary line of sidebar info panel
-        /// where level, score and next shape info are shown.
+        /// Leftend boundary of sidebar info panel
         /// </summary>
         private int sidebarLeft;
+        /// <summary>
+        /// Rightend boundary of sidebar info panel
+        /// </summary>
         private int sidebarRight;
+        /// <summary>
+        /// Topend boundary of sidebar info panel
+        /// </summary>
         private int sidebarTop;
+        /// <summary>
+        /// Bottomend boundary of sidebar info panel
+        /// </summary>
         private int sidebarBottom;
 
         /// <summary>
         /// fallingShape: True if shape can fall down. Otherwise False.
+        /// </summary>
+        private bool fallingShape;
+        /// <summary>
         /// gameOver: True if game is over. Otherwise False.
+        /// </summary>
+        private bool gameOver;
+        /// <summary>
         /// userQuit: True if user quits the game by pressing Escape. Otherwise False.
         /// </summary>
-        public bool fallingShape;
-        public bool gameOver;
-        public bool userQuit;
-
+        private bool userQuit;
         /// <summary>
-        /// score: manage and store the scoring. Increasing of score will increase the Level.
-        /// level: manage and store the level increasing. Increasing the level will decrease the fallingTimeInterval.
+        /// gamePaused: True if user pause the game by pressing P. Otherwise False.
         /// </summary>
+        private bool gamePaused;
+
         public static int score;
         public static int level;
 
@@ -77,7 +89,7 @@ namespace TetrisConsoleGame
             sidebarLeft = Bucket.rightEnd + 5;
             sidebarRight = sidebarLeft + 20;
             sidebarTop = Bucket.topEnd;
-            sidebarBottom = sidebarTop + 14;
+            sidebarBottom = sidebarTop + 15;
         }
 
         /// <summary>
@@ -108,10 +120,10 @@ namespace TetrisConsoleGame
         /// to user inputs, move down the shape by one step after every time interval, update the sidebar 
         /// info, check for game over and end the game if it is over.
         /// 
-        /// The game will continue until game is not over and uset doesn't quit. (see Lines from 104 to 183).
+        /// The game will continue until game is not over and uset doesn't quit. (see Lines from 146 to 226).
         /// In this loop it will generate shape, display it in console if game is not over and start the stopwatch
         /// to measure the time interval of falling shape down and also...
-        /// there is another loop in it which manage shape falling (see Lines from 130 to 181).
+        /// there is another loop in it which manage shape falling (see Lines from 169 to 224).
         /// This loop will continue until the shape can move down without facing any obstacle or reach the bottom boundary.
         /// while falling it will check for any available user's input (Console.KeyAvailable) in input stream and if find any
         /// then do the respective job by calling respective function. 
@@ -127,6 +139,7 @@ namespace TetrisConsoleGame
         private void playGame()
         {
             gameOver = false;
+            gamePaused = false;
             userQuit = false;
             TetrisShapes nextShape = generateShape(randomShape.Next(7));
 
@@ -159,19 +172,19 @@ namespace TetrisConsoleGame
                     {
                         pressedKey = Console.ReadKey(true);
 
-                        if (pressedKey.Key == ConsoleKey.UpArrow && currentShape.canRotate())
+                        if (!gamePaused && pressedKey.Key == ConsoleKey.UpArrow && currentShape.canRotate())
                         {
                             currentShape.RotateShape();
                         }
-                        else if (pressedKey.Key == ConsoleKey.LeftArrow && currentShape.canMoveLeft())
+                        else if (!gamePaused && pressedKey.Key == ConsoleKey.LeftArrow && currentShape.canMoveLeft())
                         {
                             currentShape.moveLeft();
                         }
-                        else if (pressedKey.Key == ConsoleKey.RightArrow && currentShape.canMoveRight())
+                        else if (!gamePaused && pressedKey.Key == ConsoleKey.RightArrow && currentShape.canMoveRight())
                         {
                             currentShape.moveRight();
                         }
-                        else if (pressedKey.Key == ConsoleKey.DownArrow)
+                        else if (!gamePaused && pressedKey.Key == ConsoleKey.DownArrow)
                         {
                             if (currentShape.canMoveDown(3))
                             {
@@ -183,14 +196,18 @@ namespace TetrisConsoleGame
                                 Bucket.updateGrid(currentShape.getShape(currentShape.currentRotation), currentShape.left, currentShape.top, TetrisShapes.shapeChar);
                             }
                         }
+                        else if (pressedKey.Key == ConsoleKey.P)
+                        {
+                            PausingOperation();
+                        }
                         else if (pressedKey.Key == ConsoleKey.Escape)
                         {
                             fallingShape = false;
                             userQuit = true;
                         }
                     }
-                    
-                    if (stopwatch.ElapsedMilliseconds >= fallingTimeInterval - ((level - 1) * 100))
+
+                    if (!gamePaused && stopwatch.ElapsedMilliseconds >= fallingTimeInterval - ((level - 1) * 100))
                     {
                         if (currentShape.canMoveDown(1))
                         {
@@ -208,7 +225,7 @@ namespace TetrisConsoleGame
                 updateSidebar(nextShape);
             }
         }
-        
+
         /// <summary>
         /// generateShape(int) a function which will create an object of any shape
         /// randomly and return it to it's caller function.
@@ -274,6 +291,9 @@ namespace TetrisConsoleGame
             Console.SetCursorPosition(sidebarLeft + 2, sidebarTop + 11);
             Console.Write("Level: {0}", level);
 
+            Console.SetCursorPosition(((sidebarLeft + sidebarRight) / 2) - 8, sidebarBottom - 2);
+            Console.Write("Press P to Pause.");
+
             Console.SetCursorPosition(((sidebarLeft + sidebarRight) / 2) - 8, sidebarBottom - 1);
             Console.Write("Press Esc to Quit.");
 
@@ -309,6 +329,35 @@ namespace TetrisConsoleGame
 
             ChangeConsoleColors.to_Bucket_ForegroundColor();
             ChangeConsoleColors.to_Bucket_BackgroundColor();
+        }
+
+        /// <summary>
+        /// Manage the Pausing operation.
+        /// Paused when user press P.
+        /// Resume when user press P again.
+        /// </summary>
+        private void PausingOperation()
+        {
+            gamePaused = !gamePaused;
+
+            if (gamePaused)
+            {
+                Console.SetCursorPosition(((Bucket.rightEnd + Bucket.leftEnd) / 2) - 3, Bucket.topEnd - 1);
+                ChangeConsoleColors.to_info_BackgroundColor();
+                ChangeConsoleColors.to_info_ForegroundColor();
+                Console.Write("Paused!");
+                ChangeConsoleColors.to_Bucket_BackgroundColor();
+                ChangeConsoleColors.to_Bucket_ForegroundColor();
+            }
+            else
+            {
+                Console.SetCursorPosition(((Bucket.rightEnd + Bucket.leftEnd) / 2) - 3, Bucket.topEnd - 1);
+                ChangeConsoleColors.to_info_BackgroundColor();
+                ChangeConsoleColors.to_info_ForegroundColor();
+                Console.Write("       ");
+                ChangeConsoleColors.to_Bucket_BackgroundColor();
+                ChangeConsoleColors.to_Bucket_ForegroundColor();
+            }
         }
 
         /// <summary>
