@@ -51,7 +51,7 @@ namespace TetrisConsoleGame
         /// shapchar is char which will be used as a shape cell to make the shape.
         /// </summary>
         public const char shapeChar = 'O';
-        public const char shapeSpace = ' ';
+        public const char shapeNull = ' ';
         
         /// <summary>
         /// A number between (1 -3) to indicate how much step a shape will move down.
@@ -229,7 +229,7 @@ namespace TetrisConsoleGame
             {
                 for (int j = 0; j < arr[i].Length; j++)
                 {
-                    if (arr[i][j] != shapeSpace)
+                    if (arr[i][j] != shapeNull)
                         Console.Write(" ");
                     else Console.CursorLeft++;
                 }
@@ -252,7 +252,7 @@ namespace TetrisConsoleGame
             {
                 for (int j = 0; j < arr[i].Length; j++)
                 {
-                    if (arr[i][j] != shapeSpace)
+                    if (arr[i][j] != shapeNull)
                         Console.Write(arr[i][j]);
                     else Console.CursorLeft++;
                 }

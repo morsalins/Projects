@@ -12,21 +12,21 @@ namespace TetrisConsoleGame
             : base(x, y + 2, x, x + 1, y, y + 2)
         {
             allRotations = new char[][][]{
-                            new char[][]{new char[]{shapeChar, shapeSpace, shapeSpace},
-                                         new char[]{shapeChar, shapeSpace, shapeSpace},
-                                         new char[]{shapeChar, shapeChar, shapeSpace},
+                            new char[][]{new char[]{shapeChar, shapeNull, shapeNull},
+                                         new char[]{shapeChar, shapeNull, shapeNull},
+                                         new char[]{shapeChar, shapeChar, shapeNull},
                                         },
                             new char[][]{new char[]{shapeChar, shapeChar, shapeChar},
-                                         new char[]{shapeChar, shapeSpace, shapeSpace},
-                                         new char[]{shapeSpace, shapeSpace, shapeSpace}
+                                         new char[]{shapeChar, shapeNull, shapeNull},
+                                         new char[]{shapeNull, shapeNull, shapeNull}
                                         },
-                            new char[][]{new char[]{shapeChar, shapeChar, shapeSpace},
-                                         new char[]{shapeSpace, shapeChar, shapeSpace},
-                                         new char[]{shapeSpace, shapeChar, shapeSpace}
+                            new char[][]{new char[]{shapeChar, shapeChar, shapeNull},
+                                         new char[]{shapeNull, shapeChar, shapeNull},
+                                         new char[]{shapeNull, shapeChar, shapeNull}
                                         },
-                            new char[][]{new char[]{shapeSpace, shapeSpace, shapeChar},
+                            new char[][]{new char[]{shapeNull, shapeNull, shapeChar},
                                          new char[]{shapeChar, shapeChar, shapeChar},
-                                         new char[]{shapeSpace, shapeSpace, shapeSpace},
+                                         new char[]{shapeNull, shapeNull, shapeNull},
                                         }
                                        };
             allDirection = new int[4, 4]{{0, 1, -2, 0},

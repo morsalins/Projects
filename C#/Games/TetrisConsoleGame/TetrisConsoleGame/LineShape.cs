@@ -13,14 +13,14 @@ namespace TetrisConsoleGame
         {
             allRotations = new char[][][]{
                              new char[][]{new char[]{shapeChar, shapeChar, shapeChar, shapeChar},
-                                          new char[]{shapeSpace, shapeSpace, shapeSpace, shapeSpace},
-                                          new char[]{shapeSpace, shapeSpace, shapeSpace, shapeSpace},
-                                          new char[]{shapeSpace, shapeSpace, shapeSpace, shapeSpace},
+                                          new char[]{shapeNull, shapeNull, shapeNull, shapeNull},
+                                          new char[]{shapeNull, shapeNull, shapeNull, shapeNull},
+                                          new char[]{shapeNull, shapeNull, shapeNull, shapeNull},
                                         },
-                             new char[][]{new char[]{shapeChar, shapeSpace, shapeSpace, shapeSpace},
-                                          new char[]{shapeChar, shapeSpace, shapeSpace, shapeSpace},
-                                          new char[]{shapeChar, shapeSpace, shapeSpace, shapeSpace},
-                                          new char[]{shapeChar, shapeSpace, shapeSpace, shapeSpace},
+                             new char[][]{new char[]{shapeChar, shapeNull, shapeNull, shapeNull},
+                                          new char[]{shapeChar, shapeNull, shapeNull, shapeNull},
+                                          new char[]{shapeChar, shapeNull, shapeNull, shapeNull},
+                                          new char[]{shapeChar, shapeNull, shapeNull, shapeNull},
                                         }
                                       };
 

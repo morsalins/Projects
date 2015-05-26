@@ -342,19 +342,27 @@ namespace TetrisConsoleGame
 
             if (gamePaused)
             {
-                Console.SetCursorPosition(((Bucket.rightEnd + Bucket.leftEnd) / 2) - 3, Bucket.topEnd - 1);
                 ChangeConsoleColors.to_info_BackgroundColor();
                 ChangeConsoleColors.to_info_ForegroundColor();
+
+                Console.SetCursorPosition(((Bucket.rightEnd + Bucket.leftEnd) / 2) - 3, Bucket.topEnd - 1);
                 Console.Write("Paused!");
+                Console.SetCursorPosition(((sidebarLeft + sidebarRight) / 2) - 8, sidebarBottom - 2);
+                Console.Write("Press P to Resume.");
+                
                 ChangeConsoleColors.to_Bucket_BackgroundColor();
                 ChangeConsoleColors.to_Bucket_ForegroundColor();
             }
             else
             {
-                Console.SetCursorPosition(((Bucket.rightEnd + Bucket.leftEnd) / 2) - 3, Bucket.topEnd - 1);
                 ChangeConsoleColors.to_info_BackgroundColor();
                 ChangeConsoleColors.to_info_ForegroundColor();
+
+                Console.SetCursorPosition(((Bucket.rightEnd + Bucket.leftEnd) / 2) - 3, Bucket.topEnd - 1);
                 Console.Write("       ");
+                Console.SetCursorPosition(((sidebarLeft + sidebarRight) / 2) - 8, sidebarBottom - 2);
+                Console.Write("Press P to Pause. ");
+                
                 ChangeConsoleColors.to_Bucket_BackgroundColor();
                 ChangeConsoleColors.to_Bucket_ForegroundColor();
             }

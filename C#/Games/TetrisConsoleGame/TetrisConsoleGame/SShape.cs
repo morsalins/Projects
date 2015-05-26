@@ -12,13 +12,13 @@ namespace TetrisConsoleGame
             : base(x, y, x - 1, x + 1, y, y + 1)
         {
             allRotations = new char[][][] {
-                                    new char[][]{new char[]{shapeSpace, shapeChar, shapeChar},
-                                                 new char[]{shapeChar, shapeChar, shapeSpace},
-                                                 new char[]{shapeSpace, shapeSpace, shapeSpace},
+                                    new char[][]{new char[]{shapeNull, shapeChar, shapeChar},
+                                                 new char[]{shapeChar, shapeChar, shapeNull},
+                                                 new char[]{shapeNull, shapeNull, shapeNull},
                                                 },
-                                    new char[][]{new char[]{shapeChar, shapeSpace, shapeSpace},
-                                                 new char[]{shapeChar, shapeChar, shapeSpace},
-                                                 new char[]{shapeSpace, shapeChar, shapeSpace},
+                                    new char[][]{new char[]{shapeChar, shapeNull, shapeNull},
+                                                 new char[]{shapeChar, shapeChar, shapeNull},
+                                                 new char[]{shapeNull, shapeChar, shapeNull},
                                                 }
                                      };
             allDirection = new int[2, 4] {{ -1, 1, 0, 1 },
