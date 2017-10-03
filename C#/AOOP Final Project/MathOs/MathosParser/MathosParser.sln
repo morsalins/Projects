@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathosParser", "MathosParser\MathosParser.csproj", "{C6C1A4D3-5426-4B62-9D61-4AFCAED471BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathosParserTests", "MathosParserTests\MathosParserTests.csproj", "{275F3C16-0286-4917-92D4-15F7E648EDA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{87AA8F5B-CE4A-4DC7-8598-37C602BBFA66}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs18
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MathosParser\\MathosParser.csproj
+		SccProjectName1 = MathosParser
+		SccLocalPath1 = MathosParser
+		SccProjectUniqueName2 = MathosParserTests\\MathosParserTests.csproj
+		SccProjectName2 = MathosParserTests
+		SccLocalPath2 = MathosParserTests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6C1A4D3-5426-4B62-9D61-4AFCAED471BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C1A4D3-5426-4B62-9D61-4AFCAED471BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C1A4D3-5426-4B62-9D61-4AFCAED471BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C1A4D3-5426-4B62-9D61-4AFCAED471BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{275F3C16-0286-4917-92D4-15F7E648EDA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{275F3C16-0286-4917-92D4-15F7E648EDA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{275F3C16-0286-4917-92D4-15F7E648EDA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{275F3C16-0286-4917-92D4-15F7E648EDA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

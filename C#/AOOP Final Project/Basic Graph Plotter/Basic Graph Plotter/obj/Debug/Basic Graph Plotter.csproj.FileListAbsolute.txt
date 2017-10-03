@@ -1,0 +1,99 @@
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe.config
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.pdb
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.csprojResolveAssemblyReference.cache
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\MainWindow.baml
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\MainWindow.g.cs
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\App.g.cs
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter_MarkupCompile.cache
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.g.resources
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic_Graph_Plotter.Properties.Resources.resources
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.csproj.GenerateResource.Cache
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.exe
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.pdb
+C:\Users\MIM\Desktop\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\MathParser.dll
+J:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe.config
+J:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.exe
+J:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.pdb
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe.config
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.exe
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.pdb
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.pdb
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\MathParser.dll
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\MainWindow.baml
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\MainWindow.g.cs
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\App.g.cs
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter_MarkupCompile.cache
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.g.resources
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic_Graph_Plotter.Properties.Resources.resources
+C:\Users\student\Desktop\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.csproj.GenerateResource.Cache
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe.config
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.exe
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.pdb
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.pdb
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\MathParser.dll
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.csprojResolveAssemblyReference.cache
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\MainWindow.baml
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\MainWindow.g.cs
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\App.g.cs
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter_MarkupCompile.cache
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.g.resources
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic_Graph_Plotter.Properties.Resources.resources
+G:\UIU Course Material\AOOP\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.csproj.GenerateResource.Cache
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe.config
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.exe
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.pdb
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.pdb
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\MathParser.dll
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.csprojResolveAssemblyReference.cache
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\MainWindow.baml
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\MainWindow.g.cs
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\App.g.cs
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter_MarkupCompile.cache
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.g.resources
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic_Graph_Plotter.Properties.Resources.resources
+C:\Users\MIM\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.csproj.GenerateResource.Cache
+J:\UIU Course Material\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe.config
+J:\UIU Course Material\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.exe
+J:\UIU Course Material\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.pdb
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe.config
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.exe
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.pdb
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.pdb
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\MathParser.dll
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\MainWindow.baml
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\MainWindow.g.cs
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\App.g.cs
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter_MarkupCompile.cache
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.g.resources
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic_Graph_Plotter.Properties.Resources.resources
+C:\Users\student\Desktop\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.csproj.GenerateResource.Cache
+F:\ \UIU Course Material\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe.config
+F:\ \UIU Course Material\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.exe
+F:\ \UIU Course Material\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.pdb
+D:\ \UIU Course Material\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe.config
+D:\ \UIU Course Material\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.exe
+D:\ \UIU Course Material\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.pdb
+J:\ \UIU Course Material\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe.config
+J:\ \UIU Course Material\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.exe
+J:\ \UIU Course Material\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.pdb
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe.config
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.exe
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.pdb
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.exe
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\Basic Graph Plotter.pdb
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\bin\Debug\MathParser.dll
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\MainWindow.baml
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\MainWindow.g.cs
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\App.g.cs
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter_MarkupCompile.cache
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.g.resources
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic_Graph_Plotter.Properties.Resources.resources
+C:\Users\student\Desktop\AOOP\AOOP Final Project\Basic Graph Plotter\Basic Graph Plotter\obj\Debug\Basic Graph Plotter.csproj.GenerateResource.Cache
